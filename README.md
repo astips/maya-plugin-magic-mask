@@ -1,5 +1,6 @@
 # maya-plugin-magic-mask
-Maya hud plugin based on viewport 2.0
+Maya hud plugin based on viewport 2.0;
+Idea from Chris Zurbrigg (http://zurbrigg.com)'s zshotmask plugin
 
 ![MAIN VIEW](docs/images/main_view.png)
 
