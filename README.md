@@ -18,20 +18,24 @@ cmds.createNode("magicMask")
 
 #### Render Setting
 Before using this mask node, please do set the render settings
+
 ![Render Setting](docs/images/render_settings.png)
 
 
 #### Camera Resolution Fit Setting
 All fit type work well, but the "Horizontal" type will get a better view
+
 ![Camera Fit Resolution](docs/images/camera_fit.png)
 
 #### Crop
 * Use crop preset
+
 ![Crop Preset](docs/images/crop_preset.png)
 * Use custom resolution
+
 ![Crop Custom](docs/images/crop_custom_res.png)
 
-**HD1080 with crop 2.35:1**
+_HD1080 with crop 2.35:1_
 ![Example View](docs/images/view_calc.png)
 
 #### Dynamic - Frame & Focal Length
