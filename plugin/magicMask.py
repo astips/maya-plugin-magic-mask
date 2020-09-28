@@ -686,8 +686,7 @@ class AEmagicMaskTemplate(NodeTemplate):
         self.endScrollLayout()
 
     def dim_crop_use_custom(self, plug):
-        if self.current_node is None:
-            self.current_node = pm.general.PyNode(plug.split('.')[0])
+        self.current_node = pm.general.PyNode(plug.split('.')[0])
         value = 1 - self.current_node.crop_enabled.get()
         self.dimControl(self.current_node, 'crop_preset', value)
         self.dimControl(self.current_node, 'crop_use_custom', value)
@@ -697,15 +696,13 @@ class AEmagicMaskTemplate(NodeTemplate):
             self.dim_crop_resolution(plug)
 
     def dim_crop_resolution(self, plug):
-        if self.current_node is None:
-            self.current_node = pm.general.PyNode(plug.split('.')[0])
+        self.current_node = pm.general.PyNode(plug.split('.')[0])
         value = 1 - self.current_node.crop_use_custom.get()
         self.dimControl(self.current_node, 'crop_custom_width', value)
         self.dimControl(self.current_node, 'crop_custom_height', value)
 
     def dim_cut(self, plug):
-        if self.current_node is None:
-            self.current_node = pm.general.PyNode(plug.split('.')[0])
+        self.current_node = pm.general.PyNode(plug.split('.')[0])
         value = 1 - self.current_node.cut_frame_enabled.get()
         self.dimControl(self.current_node, 'cut_in', value)
         self.dimControl(self.current_node, 'cut_out', value)
